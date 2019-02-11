@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Shopping List</string>
+    <string name="btnAdd">Add Items to List</string>
+    <string name="btnGoBack">Go Back</string>
+    <string name="item1">Habenero</string>
+    <string name="item2">Salami</string>
+    <string name="item3">Quail Eggs</string>
+    <string name="item4">Turducken</string>
+    <string name="item5">Yulkon Potatoes</string>
+    <string name="item6">Goose Liver</string>
+    <string name="item7">Cornmeal</string>
+    <string name="item8">Quinoa</string>
+    <string name="item9">Waffles</string>
+    <string name="item10">Goat Milk</string>
 </resources>
