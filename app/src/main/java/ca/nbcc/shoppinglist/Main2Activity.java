@@ -30,7 +30,7 @@ public class Main2Activity extends AppCompatActivity {
     }
 
     public void close(View view) {
-        setResult(RESULT_OK);
         finish();
+
     }
 }

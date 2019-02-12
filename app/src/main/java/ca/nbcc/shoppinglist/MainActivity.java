@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
             if(resultCode == RESULT_OK){
                 String reply = data.getStringExtra(Main2Activity.EXTRA_REPLY);
 
-                item1.setText(reply);
+
 
                 bindToView(reply);
             }
@@ -74,15 +74,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void bindToView(String item){
-
-
+        String msg = "";
 
         if(items.size() > 0){
             for(ShoppingListItem i : items){
-                if(i.itemName.equals(item)){
+                if(i.itemName == item){
                     i.itemCount ++;
                 }
-                else{
+                else if(i.itemName != item){
                     items.add(new ShoppingListItem(item, 1));
                 }
             }
@@ -94,17 +93,17 @@ public class MainActivity extends AppCompatActivity {
 
 
         if(items.size() == 1){
-            String msg = items.get(0).itemCount + " " + items.get(0).itemName;
+            msg = items.get(0).itemCount + " " + items.get(0).itemName;
             item1.setText(msg);
         }
         else if(items.size() == 2){
-            String msg = items.get(0).itemCount + " " + items.get(0).itemName;
+            msg = items.get(0).itemCount + " " + items.get(0).itemName;
             item1.setText(msg);
             msg = items.get(1).itemCount + " " + items.get(1).itemName;
             item2.setText(msg);
         }
         else if(items.size() == 3){
-            String msg = items.get(0).itemCount + " " + items.get(0).itemName;
+            msg = items.get(0).itemCount + " " + items.get(0).itemName;
             item1.setText(msg);
             msg = items.get(1).itemCount + " " + items.get(1).itemName;
             item2.setText(msg);
@@ -112,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
             item3.setText(msg);
         }
         else if(items.size() == 4){
-            String msg = items.get(0).itemCount + " " + items.get(0).itemName;
+            msg = items.get(0).itemCount + " " + items.get(0).itemName;
             item1.setText(msg);
             msg = items.get(1).itemCount + " " + items.get(1).itemName;
             item2.setText(msg);
@@ -122,7 +121,7 @@ public class MainActivity extends AppCompatActivity {
             item4.setText(msg);
         }
         else if(items.size() == 5){
-            String msg = items.get(0).itemCount + " " + items.get(0).itemName;
+            msg = items.get(0).itemCount + " " + items.get(0).itemName;
             item1.setText(msg);
             msg = items.get(1).itemCount + " " + items.get(1).itemName;
             item2.setText(msg);
@@ -134,7 +133,7 @@ public class MainActivity extends AppCompatActivity {
             item5.setText(msg);
         }
         else if(items.size() == 6){
-            String msg = items.get(0).itemCount + " " + items.get(0).itemName;
+            msg = items.get(0).itemCount + " " + items.get(0).itemName;
             item1.setText(msg);
             msg = items.get(1).itemCount + " " + items.get(1).itemName;
             item2.setText(msg);
@@ -148,7 +147,7 @@ public class MainActivity extends AppCompatActivity {
             item6.setText(msg);
         }
         else if(items.size() == 7){
-            String msg = items.get(0).itemCount + " " + items.get(0).itemName;
+            msg = items.get(0).itemCount + " " + items.get(0).itemName;
             item1.setText(msg);
             msg = items.get(1).itemCount + " " + items.get(1).itemName;
             item2.setText(msg);
@@ -164,7 +163,7 @@ public class MainActivity extends AppCompatActivity {
             item7.setText(msg);
         }
         else if(items.size() == 8){
-            String msg = items.get(0).itemCount + " " + items.get(0).itemName;
+            msg = items.get(0).itemCount + " " + items.get(0).itemName;
             item1.setText(msg);
             msg = items.get(1).itemCount + " " + items.get(1).itemName;
             item2.setText(msg);
@@ -182,7 +181,7 @@ public class MainActivity extends AppCompatActivity {
             item8.setText(msg);
         }
         else if(items.size() == 9){
-            String msg = items.get(0).itemCount + " " + items.get(0).itemName;
+            msg = items.get(0).itemCount + " " + items.get(0).itemName;
             item1.setText(msg);
             msg = items.get(1).itemCount + " " + items.get(1).itemName;
             item2.setText(msg);
@@ -202,7 +201,7 @@ public class MainActivity extends AppCompatActivity {
             item9.setText(msg);
         }
         else if(items.size() == 10){
-            String msg = items.get(0).itemCount + " " + items.get(0).itemName;
+            msg = items.get(0).itemCount + " " + items.get(0).itemName;
             item1.setText(msg);
             msg = items.get(1).itemCount + " " + items.get(1).itemName;
             item2.setText(msg);
